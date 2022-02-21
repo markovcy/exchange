@@ -42,37 +42,22 @@ function App() {
   }, [rates]);
 
   function change_value1(value1){
-    if (currency1 === 'UAH'){
-      set_value2((value1/rates_curr[currency2]).toFixed(4));
-    } else set_value2((value1 * rates_curr[currency1] / rates_curr[currency2]).toFixed(4));
- 
+    set_value2((value1 * rates_curr[currency1] / rates_curr[currency2]).toFixed(4));
     set_value1(value1);
-
   }
 
   function change_currency1(currency1){
-    if (currency1 === 'UAH'){
-      set_value2((value1 /rates_curr[currency2]).toFixed(4));
-    } else set_value2((value1 * rates_curr[currency1]/rates_curr[currency2]).toFixed(4));
-    
+    set_value2((value1 * rates_curr[currency1]/rates_curr[currency2]).toFixed(4));
     set_curr1(currency1)
-
   }
 
   function change_value2(value2){
-    if (currency2 === 'UAH'){
-      set_value1((value2 /rates_curr[currency1]).toFixed(4));
-    } else set_value1((value2 * rates_curr[currency2]/rates_curr[currency1]).toFixed(4));
-
+    set_value1((value2 * rates_curr[currency2]/rates_curr[currency1]).toFixed(4));
     set_value2(value2);
-
   }
 
   function change_currency2(currency2){
-    if (currency1 === 'UAH'){
-      set_value1((value2 /rates_curr[currency2]).toFixed(4));
-    } else set_value1((value2* rates_curr[currency2]/rates_curr[currency1]).toFixed(4));
-
+    set_value1((value2* rates_curr[currency2]/rates_curr[currency1]).toFixed(4));
     set_curr2(currency2)
   }
 
