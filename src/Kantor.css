@@ -1,0 +1,21 @@
+.group{
+    background: rgb(255, 255, 255);
+    width: 300px;
+    margin: 0 auto 20px;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 200px 100px;
+    border-radius: 0;
+}
+input{
+    background: #e77465;
+    padding-left: 10px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+}
+select{
+    background: #283a4e;
+    padding: 10px;
+    font-size: 20px;
+    color:rgb(255, 255, 255)
+}

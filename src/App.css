@@ -1,0 +1,12 @@
+body{
+  background-color: #c2c8f7;
+  padding: 50px;
+}
+
+h1{
+  margin-top: auto;
+  color: #98cdf6;
+  border-bottom: 5px outset #283a4e;
+  text-align: center;
+  font-size: 50px;
+}
